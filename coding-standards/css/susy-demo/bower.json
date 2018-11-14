@@ -1,0 +1,16 @@
+{
+  "name": "susy-demo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/voltagead/flaming-ironman",
+  "authors": [
+    "Craig Freeman <craigfreeman@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "susy": "~2.2.6"
+  }
+}

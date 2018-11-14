@@ -1,0 +1,149 @@
+// Susy
+@import "bower_components/susy/sass/susy";
+
+// Variables
+$space: 20px;
+
+$break-small: 480px;
+$break-medium: 720px;
+$break-large: 960px;
+$break-xl: 1800px;
+$max-width: 1200px;
+
+$susy: (
+	columns: 12,
+	container: $max-width,
+	gutters: 1/2,
+	debug: (
+		image: show-columns,
+		color: blue,
+		output: overlay,
+		toggle: top right
+	)
+);
+
+@mixin breakpoint($bp, $direction: min) {
+	@media (#{$direction}-width: $bp)  {
+		@content;
+	}
+}
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// Global
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: tomato;
+}
+
+.container {
+	@include clearfix;
+	@include container;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+	padding: 0 $space * 0.5;
+
+	@include breakpoint ($break-large) {
+		padding: 0 ($space);
+	}
+}
+
+h1 {
+	background: tomato;
+	text-align: center;
+	margin: 0 0 50px;
+	padding: $space 0;
+}
+
+// Basic Example
+.example__basic--main {
+	// Default: Block
+	@include breakpoint($break-medium) {
+		@include span(6);
+	}
+	@include breakpoint($break-large) {
+		@include span(8);	
+	}
+}
+
+.example__basic--aside {
+	@include breakpoint($break-medium) {
+		@include span(6 last);
+	}
+	@include breakpoint($break-large) {
+		@include span(4 last);
+	}
+}
+
+
+// Nested Example
+.example__nested--aside {
+	@include breakpoint($break-medium) {
+		@include span(3);
+	}
+}
+
+.example__nested--main {
+	@include breakpoint($break-medium) {
+		@include span(8 last);
+	}
+}
+
+.container--inner {
+	@include clearfix;
+}
+
+.nested--primary {
+	@include breakpoint($break-large) {
+		@include span(first 6 of 12 nest);
+	}
+}
+
+.nested--secondary {
+	@include breakpoint($break-large) {
+		@include span(last 6 of 12 nest);
+	}
+}
+
+// Grid Example
+.grid-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		display: block;
+		margin-bottom: gutter(12);
+
+		@include breakpoint($break-small) {
+			@include gallery(6 of 12);
+		}
+		@include breakpoint($break-medium) {
+			@include gallery(4 of 12);
+		}
+		@include breakpoint($break-large) {
+			@include gallery(3 of 12);
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+

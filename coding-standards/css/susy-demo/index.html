@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Susy Demo</title>
+</head>
+<body>
+
+	<h1>Susy Demo</h1>
+
+	<div class="container">
+		<h3>Basic Layout</h3>
+
+		<main class="example__basic--main">
+
+			<p>"Mobile First" approach: develop for mobile browsers. Start small, grow big. "<a href="http://zurb.com/word/progressive-enhancement" target="_blank">The more a design hinges on viewing requirements, the less flexible it becomes</a>."</p>
+
+			<p>"Progressive enhancement" is the idea of designing from a most common denominator - what most users can see - and building out. It’s also the fast track to mobile-first design.</p>
+
+			<p>
+				Our current breakpoints:
+
+				<ul>
+					<li><strong>Default:</strong> Any window greater than 300px and less than 480px</li>
+					<li><strong>Small:</strong> Any window greater than or equal to 480px</li>
+					<li><strong>Medium:</strong> Any window greater than or equal to 720px</li>
+					<li><strong>Large:</strong> Any window greater than or equal to 960px</li>
+					<li><strong>XL:</strong> Any window greater than or equal to 1800px</li>
+					<li><strong>Content max-width:</strong> 1200px. Varies by site</li>
+				</ul>
+			</p>
+
+			<p>
+				<a href="http://www.leemunroe.com/designing-for-high-resolution-retina-displays/" target="_blank">Developing for retina</a>:
+
+				<ul>
+					<li>Use media queries for high-res CSS styles</li>
+					<li>Have two versions of CSS sprites: standard dimensions and @2x
+						<ul>
+							<li>Sprites have largely been replaced with custom icon fonts (see fontastic.me) or using SVGs w/ PNG fallbacks</li>
+						</ul>
+					</li>
+					<li>Serve up larger html-embedded images with JavaScript
+						<ul>
+							<li>Picturefill, Retina.js</li>
+							<li>More pixels = better display. But, more pixels doesn't necessarily have to mean 4 or 5 times more data. More detail can be accomplished with less kilobytes.</li>
+							<li>Downside: Having to maintain two versions of graphical assets and images.</li>
+						</ul>
+					</li>
+					<li>You can just use the same image assets for both standard and high-res screens
+						<ul>
+							<li>Downside: Users may have to download larger files than they actually need</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+
+			<p>
+				Designing for retina: 
+
+				<ul>
+					<li>Where possible, use vectors and Smart Objects.</li>
+					<li>Design like you normally would, then open "modify image size" and edit your pixel dimensions to 200 percent to get the 2x view.</li>
+				</ul>
+			</p>
+
+			<p>
+				Things we would like to know about:
+
+				<ul>
+					<li>Style guide (ex: <a href="http://www.yelp.com/styleguide" target="_blank">Yelp</a>)
+						<ul>
+							<li>Headings</li>
+							<li>Colors</li>
+							<li>Typography</li>
+							<li>Inline element styles</li>
+							<li>Lists</li>
+							<li>Tables</li>
+							<li>Buttons (active, disabled, etc.)</li>
+							<li>Links</li>
+							<li>Icons</li>
+							<li>Components (heroes, carousel, callouts, widgets, etc.)</li>
+							<li>&hellip;</li>
+							<li>basically anything that is used on multiple pages</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+
+		</main>
+
+		<aside class="example__basic--aside">
+
+			<h4>Recent Articles</h4>
+
+			<ul>
+				<li><a href="#">Article 1</a></li>
+				<li><a href="#">Article 2</a></li>
+				<li><a href="#">Article 3</a></li>
+				<li><a href="#">Article 4</a></li>
+			</ul>
+
+			<h4>Recent Comments</h4>
+
+			<ul>
+				<li><a href="#">Great article</a> on <a href="#">Article 1</a></li>
+				<li><a href="#">You're dumb</a> on <a href="#">Article 2</a></li>
+				<li><a href="#">Cats</a> on <a href="#">Article 3</a></li>
+				<li><a href="#">Nice use of the Oxford comma!</a> on <a href="#">Article 1</a></li>
+			</ul>
+
+		</aside>
+	</div>
+
+	<div class="container">
+		<h3>Nested Layout</h3>
+
+		<aside class="example__nested--aside">
+
+			<h4>Recent Articles</h4>
+
+			<ul>
+				<li><a href="#">Article 1</a></li>
+				<li><a href="#">Article 2</a></li>
+				<li><a href="#">Article 3</a></li>
+				<li><a href="#">Article 4</a></li>
+			</ul>
+
+			<h4>Recent Comments</h4>
+
+			<ul>
+				<li><a href="#">Great article</a> on <a href="#">Article 1</a></li>
+				<li><a href="#">You're dumb</a> on <a href="#">Article 2</a></li>
+				<li><a href="#">Cats</a> on <a href="#">Article 3</a></li>
+				<li><a href="#">Nice use of the Oxford comma!</a> on <a href="#">Article 1</a></li>
+			</ul>
+
+		</aside>
+
+		<main class="example__nested--main">
+
+			<p>Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<p>Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			<div class="container--inner">
+
+				<div class="nested--primary">
+
+					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.</p>
+
+				</div>
+
+				<div class="nested--secondary">
+
+					<p>CurabiturPellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+
+				</div>
+			</div>
+
+		</main>
+
+	</div>
+
+	<div class="container">
+		<h3>Grid Layout</h3>
+
+		<ul class="grid-list">
+			<li><img src="http://placehold.it/600x200?text=Item+1"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+2"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+3"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+4"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+5"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+6"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+7"></li>
+			<li><img src="http://placehold.it/600x200?text=Item+8"></li>
+		</ul>
+
+	</div>
+</body>
+</html>
