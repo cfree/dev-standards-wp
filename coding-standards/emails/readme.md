@@ -14,7 +14,7 @@
 		- Provide client with Preview link if necessary
 		- Send test email
 4. Save
-	- Add static email in the [Voltage email Git repo](https://bitbucket.org/voltagead/email)
+	- Add static email in the [Email Git repo](https://bitbucket.org/cfree/email)
 
 
 ### Mailchimp
