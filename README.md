@@ -1,5 +1,4 @@
-# VOLTAGE Development Guidelines
-Internal Information for use by Voltage
+# Development Guidelines
 
 ## To Contribute
 1. Fork this repository to your account
