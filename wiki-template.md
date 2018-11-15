@@ -6,7 +6,7 @@
 General project description goes here
 
 ## Workflow
-Use GitHub Flow. Refer to the [Voltage development guidelines](https://github.com/voltagead/flaming-ironman/blob/master/development.md).
+Use GitHub Flow. Refer to the [Development Guidelines](https://github.com/cfree/flaming-ironman/blob/master/development.md).
 
 # Development
 
