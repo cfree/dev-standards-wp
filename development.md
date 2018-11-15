@@ -34,14 +34,14 @@ Be sure to install the .editorconfig file found in this repo to maintain consist
 
 ## QA and Testing
 
-In addition to frequent pull requests and code review every project needs to be QA'd by a developer _that were not the original developers_ before delivery. The development QA process must includes the following: browser testing, device testing, functional testing, responsive testing (if applicable), and accuracy to original design. If not specified then browser testing need to include the latest of the following browsers, Firefox, Chrome, Safari, and IE. Device testing need to include >= iPhone 3 and Android. This is an elaboration of the step in the prelaunch checklist found [here](https://github.com/voltagead/flaming-ironman/blob/master/frameworks/wordpress/pre-launch-checklist.md#pre-launch-checklist).
+In addition to frequent pull requests and code review every project needs to be QA'd by a developer _that were not the original developers_ before delivery. The development QA process must includes the following: browser testing, device testing, functional testing, responsive testing (if applicable), and accuracy to original design. If not specified then browser testing need to include the latest of the following browsers, Firefox, Chrome, Safari, and IE. Device testing need to include >= iPhone 3 and Android. This is an elaboration of the step in the prelaunch checklist found [here](https://github.com/cfree/flaming-ironman/blob/master/frameworks/wordpress/pre-launch-checklist.md#pre-launch-checklist).
 
 
-## Voltage Web Servers
+## Web Servers
 
-- [mediaopz](http://mediaopz.com/) - Voltage's self-hosted Interspire email hosting platform, since replaced with Mailchimp. Also contains Shopify code and any code needed to review publicly.
-- [voltagead](https://ac.mediatemple.net/login.mt?redirect=home.mt) - Media Temple GS account that hosts a number of sites
-- [voltageapps](https://ac.mediatemple.net/login.mt?redirect=home.mt) - Media Template GS account that hosts a number of sites
+- [mediaopz](http://mediaopz.com/) - Our self-hosted Interspire email hosting platform, since replaced with Mailchimp. Also contains Shopify code and any code needed to review publicly.
+- [ad](https://ac.mediatemple.net/login.mt?redirect=home.mt) - Media Temple GS account that hosts a number of sites
+- [apps](https://ac.mediatemple.net/login.mt?redirect=home.mt) - Media Template GS account that hosts a number of sites
 - [wpengine](http://my.wpengine.com) - Account that hosts a number of WordPress sites
 - Rackspace - Host for Chipotle site(s)
 - Acquia Cloud - Host for Drupal sites (Bold Earth, etc.)
