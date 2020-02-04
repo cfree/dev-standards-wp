@@ -16,7 +16,7 @@
 	- [PHP](coding-standards/php/)
 	- QA/Testing
 	- [HTML Emails](coding-standards/emails)
-- Frameworks
+- Framework Standards
 	- [WordPress](frameworks/wordpress/)
 		- [Plugins](frameworks/wordpress/plugins.md)
 		- [Pre-Lauch Checklist](frameworks/wordpress/pre-launch-checklist.md)
